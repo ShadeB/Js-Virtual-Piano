@@ -1,50 +1,57 @@
 html {
-  font-size: 10px;
+	box-sizing: border-box;
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  background-color: rgb(11, 29, 29);
+	background-color: rgb(11, 29, 29);
 }
 
-body, html{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+body,
+html {
+	font-family: sans-serif;
 }
 
 .keys {
-  display: flex;
-  flex: 1;
-  height: 20rem;
-  width: 50rem;
-  margin: 4rem auto;
+	display: flex;
+	flex: 1;
+	height: 20rem;
+	width: 50rem;
+	margin: 4rem auto;
 }
 
 .white {
-  width: 4rem;
-  border-right: 0.05rem solid rgb(92, 93, 93);
-  background-color: #ffffff;
-  transition: box-shadow .07s ease;
+	width: 4rem;
+	border-right: 0.05rem solid rgb(92, 93, 93);
+	background-color: #ffffff;
+	transition: box-shadow 0.07s ease;
 }
 
 .white--playing {
-  box-shadow: inset -0.07rem 0.14rem 0.7rem 0.14rem rgba(0, 0, 0, 0.6),
-    0 0 0 0 rgb(255, 255, 255),
-    0.16rem 0.09rem 0.14rem rgba(0, 0, 0, 1);
+	box-shadow: inset -0.07rem 0.14rem 0.7rem 0.14rem rgba(0, 0, 0, 0.6),
+		0 0 0 0 rgb(255, 255, 255), 0.16rem 0.09rem 0.14rem rgba(0, 0, 0, 1);
 }
 
 .black {
-  position: relative;
-  height: 50%;
-  background-color: #3e3e3e;
-  box-shadow: inset -0.04rem -0.5rem 0.3rem 0.3rem rgba(0, 0, 0, 1);
-  border-radius: 0 0 0.3rem 0.3rem;
-  width: 2rem;
-  margin: 0 -2%;
-  transition: box-shadow .07s ease;
+	position: relative;
+	height: 50%;
+	background-color: #3e3e3e;
+	box-shadow: inset -0.04rem -0.5rem 0.3rem 0.3rem rgba(0, 0, 0, 1);
+	border-radius: 0 0 0.3rem 0.3rem;
+	width: 2rem;
+	margin: 0 -2%;
+	transition: box-shadow 0.07s ease;
 }
 
 .black--playing {
-  box-shadow: inset -0.1rem -0.15rem 0.25rem 0.25rem rgba(0, 0, 0, 1);
-    border-radius: 0 0 0.3rem 0.3rem;
+	box-shadow: inset -0.1rem -0.15rem 0.25rem 0.25rem rgba(0, 0, 0, 1);
+	border-radius: 0 0 0.3rem 0.3rem;
 }
