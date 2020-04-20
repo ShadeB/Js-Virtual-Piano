@@ -18,6 +18,8 @@ body {
 body,
 html {
 	font-family: sans-serif;
+	height: 100%;
+	display: grid;
 }
 
 .keys {
@@ -25,7 +27,7 @@ html {
 	flex: 1;
 	height: 20rem;
 	width: 50rem;
-	margin: 4rem auto;
+	margin: auto;
 }
 
 .white {
